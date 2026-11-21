@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISBAT University | Student ICT Training Centre</title>
+    <link rel="stylesheet" href="CSS/work.css">
+</head>
+
+<body>
+   <header id="home" class="site-header">
+    <div class="brand">
+        <div class="logo-box">ISBAT</div>
+        <h1>ICT Training Centre</h1>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#timetable">Timetable</a></li>
+            <li><a href="#registration">Registration</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+
+        <section id="about" class="section-container">
+            <h2>About Us</h2>
+            <hr>
+            <p>
+                ISBAT University Student ICT Training Centre is dedicated
+                to providing students with practical Information and
+                Communication Technology skills. The centre offers
+                different training programmes designed to prepare
+                students for the modern technology industry.
+            </p>
+
+            <p>
+                Our aim is to equip students with knowledge and practical
+                experience in web development, computer networking,
+                database management and cybersecurity. We provide
+                a learning environment that encourages creativity,
+                innovation and professional development.
+            </p>
+
+            <img src="MEDIA/pic.jpg" alt="Students participating in ICT computer training" class="about-image">
+        </section>
+
+        <section id="courses" class="section-container">
+            <h2>Our Training Programmes</h2>
+            <h3>Available Training Programmes</h3>
+
+            <ul class="course-list">
+                <li>Web Development</li>
+                <li>Computer Networking</li>
+                <li>Database Management</li>
+                <li>Cybersecurity</li>
+            </ul>
+
+            <h3>Steps to Register for a Programme</h3>
+
+            <ol class="registration-steps">
+                <li>Visit the Student ICT Training Centre website.</li>
+                <li>Choose your preferred training programme.</li>
+                <li>Fill in the student registration form.</li>
+                <li>Submit your registration details.</li>
+                <li>Wait for confirmation from the training centre.</li>
+            </ol>
+
+            <h3>Explore Our Courses</h3>
+            <div class="course-container">
+                <div class="course-card">
+                    <h3>Web Development</h3>
+                    <p>
+                        Learn how to design and develop modern websites
+                        using HTML, CSS and other web technologies.
+                    </p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Computer Networking</h3>
+                    <p>
+                        Learn how computer networks operate, including
+                        network configuration and troubleshooting.
+                    </p>
+                </div>
+
+                <div class="course-card featured-card">
+                    <span class="register-label">Register Now</span>
+                    <h3>Database Management</h3>
+                    <p>
+                        Learn how to create, organize, manage and
+                        maintain databases efficiently.
+                    </p>
+                </div>
+
+                <div class="course-card">
+                    <h3>Cybersecurity</h3>
+                    <p>
+                        Understand computer security, online threats
+                        and ways of protecting information systems.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="timetable" class="section-container">
+
+            <h2>Weekly Training Timetable</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Course</th>
+                        <th>Time</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Web Development</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                        <td>Mr. Ssali John</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Computer Networking</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Ms. Ayebare Sarah</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Database Management</td>
+                        <td>1:00 PM - 3:00 PM</td>
+                        <td>Mr. MukisaDavid</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Cybersecurity</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                        <td>Ms. Nanfuka Mary</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <section id="registration" class="section-container">
+            <h2>Student Registration Form</h2>
+            <p>
+                Fill in the form below to register for your preferred
+                ICT training programme.
+            </p>
+
+            <form action="#" method="post">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                <label for="studentnumber">Student Number:</label>
+                <input type="text" id="studentnumber" name="studentnumber" placeholder="Enter your student number" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <label>Gender:</label>
+
+                <div class="input-group">
+                    <label><input type="radio" name="gender" value="Male" required>Male</label>
+                    <label><input type="radio" name="gender" value="Female">Female</label>
+                </div>
+
+                <label for="course">Preferred Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">Select a course</option>
+                    <option value="Web Development"> Web Development</option>
+                    <option value="Computer Networking">Computer Networking</option>
+                    <option value="Database Management">Database Management</option>
+                    <option value="Cybersecurity"> Cybersecurity</option>
+                </select>
+
+                <label>Study Mode:</label>
+                <div class="input-group">
+                    <label> <input type="checkbox" name="study_mode"  value="Full Time">Full Time</label>
+                    <label> <input type="checkbox" name="study_mode"  value="Part Time"> Part Time</label>
+                    <label> <input type="checkbox" name="study_mode"  value="Online">Online</label>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit Registration</button>
+                    <button type="reset" class="reset-button">Reset Form</button>
+                </div>
+
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 ISBAT University Student ICT Training Centre.</p>
+        <p>All Rights Reserved.</p>
+    </footer>
+
+    <a href="#home" class="back-to-top">Back to Top ↑</a>
+
+</body>
+</html>

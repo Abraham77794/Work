@@ -1,0 +1,248 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #2b2b2b;
+    background: #f6f3f1;
+}
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #33211a;
+    padding: 12px 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-box {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border: 2px solid #0000ff;
+    border-top: 4px solid #fff;
+}
+
+.site-header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+    letter-spacing: 4px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #d9c2e8;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    color: #fff;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.section-container h2 {
+    margin-top: 0;
+    color: #33211a;
+}
+
+.about-image {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background: #f6f3f1;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.featured-card {
+    background: #33211a;
+    color: #fff;
+}
+
+.register-label {
+    background: #d9c2e8;
+    color: #33211a;
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #33211a;
+    color: #fff;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.input-group,
+.form-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 22px;
+    color: #fff;
+    background: #6b4a7d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reset-button {
+    background: #7a6d67;
+}
+
+footer {
+    background: #33211a;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 16px;
+    background: #6b4a7d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* TABLET RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+    .site-header, .brand {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brand { gap: 10px; }
+    .site-header h1 { font-size: 24px; letter-spacing: 2px; }
+
+    .navbar ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        list-style: none;
+    }
+
+    .navbar a { font-size: 16px; }
+    main { padding: 15px; }
+    .section-container { padding: 20px; }
+    .course-container { grid-template-columns: repeat(2, 1fr); }
+
+    .input-group, .form-buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 480px) {
+    .site-header { padding: 15px 10px; }
+    .site-header h1 { font-size: 20px; letter-spacing: 1px; }
+    .logo-box { font-size: 18px; }
+    .navbar { width: 100%; }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    main { padding: 10px; }
+    .section-container { padding: 15px; margin-bottom: 20px; }
+    .section-container h2 { font-size: 21px; }
+    .section-container h3 { font-size: 17px; }
+    .course-container { grid-template-columns: 1fr; }
+    .course-card { padding: 15px; }
+    .about-image { width: 100%; height: auto; }
+    form { width: 100%; }
+
+    .input-group, .form-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form-buttons button { width: 100%; }
+    footer { font-size: 14px; padding: 15px; }
+
+    .back-to-top {
+        right: 10px;
+        bottom: 10px;
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
+
+/* EXTRA SMALL PHONES */
+@media screen and (max-width: 320px) {
+    .site-header h1 { font-size: 17px; }
+    .navbar a { font-size: 14px; }
+    .section-container { padding: 10px; }
+    .section-container h2 { font-size: 19px; }
+    .course-card { padding: 12px; }
+}
